@@ -5,6 +5,7 @@ public class Fornecedor {
 	private int codigo;		
 	private	String nome;
 	private String endereco;
+	
 	public int getCodigo() {
 		return codigo;
 	}
@@ -23,8 +24,16 @@ public class Fornecedor {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
+	@Override
 	public String toString() {
-		return "Cliente Codigo: " + endereco + " Nome: " + nome + endereco + "";
+		return "Fornecedor [codigo=" + codigo + ", " + (nome != null ? "nome=" + nome + ", " : "")
+				+ (endereco != null ? "endereco=" + endereco : "") + "]";
+	}
+	public void setEnd(String text) {
+		// TODO Auto-generated method stub
+		
+	}
+	
 		
 		
 		
