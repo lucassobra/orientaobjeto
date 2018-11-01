@@ -196,6 +196,9 @@ public class Tela extends JFrame implements ActionListener {
 			txtDesc.setText("");
 			txtData.setText("");
 			
+			produtos.setCodigo(c);
+			c++;
+			
 			
 			
 			

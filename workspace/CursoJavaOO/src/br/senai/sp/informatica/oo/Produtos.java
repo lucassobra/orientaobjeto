@@ -4,10 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Produtos {
+public int getCodigo() {
+		
+		
+		return getCodigo();
+	}
+	
+	
+	
 	private String nome;
 	private String descricao;
 	private String dataValidade;
 	private Tipos tipo;
+	
 	
 	public String getNome() {
 		return nome;
@@ -40,6 +49,10 @@ public class Produtos {
 				+ (descricao != null ? "descricao=" + descricao + ", " : "")
 				+ (dataValidade != null ? "dataValidade=" + dataValidade + ", " : "")
 				+ (tipo != null ? "tipo=" + tipo : "") + "]";
+	}
+	public void setCodigo(int c) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	
