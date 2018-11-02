@@ -146,6 +146,7 @@ public class Cadrastrato extends JFrame implements ActionListener {
 		
 		if (botao.equals(btnSalvar)) {
 			
+			
 			Cliente cliente = new Cliente();
 			
 			cliente.setCodigo(Integer.parseInt(tfCodigo.getText()));

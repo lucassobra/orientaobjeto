@@ -5,6 +5,7 @@ public abstract class TodoProduto {
 		private String codigoDoProduto;
 		private String descricaoDoProduto;
 		private String ValorDoProduro;
+		
 		public String getCodigoDoProduto() {
 			return codigoDoProduto;
 		}
@@ -24,8 +25,11 @@ public abstract class TodoProduto {
 			ValorDoProduro = valorDoProduro;
 		}
 		
+		@Override
+		public String toString() {
+			return "Codigo do Produto: " + codigoDoProduto + " Descricao: " + descricaoDoProduto
+					+ " Valor do Produro: " + ValorDoProduro;
+		}
 		
-		
-	
-
 }
+

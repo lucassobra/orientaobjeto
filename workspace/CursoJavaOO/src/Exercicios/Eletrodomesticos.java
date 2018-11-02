@@ -1,24 +1,29 @@
 package Exercicios;
 
-import br.senai.sp.informatica.oo.Eletrodomésticos;
-
 public class Eletrodomesticos extends TodoProduto {
-	
-		
-		private String dataDeValidade;
-		private String dataDeProducao;
-		public String getDataDeValidade() {
-			return dataDeValidade;
-		}
-		public void setDataDeValidade(String dataDeValidade) {
-			this.dataDeValidade = dataDeValidade;
-		}
-		public String getDataDeProducao() {
-			return dataDeProducao;
-		}
-		public void setDataDeProducao(String dataDeProducao) {
-			this.dataDeProducao = dataDeProducao;
-		}
-	
+
+	private String codigoFornecedor;
+	private String nomeFornecedor;
+
+	public String getCodigoFornecedor() {
+		return codigoFornecedor;
+	}
+
+	public void setCodigoFornecedor(String codigoFornecedor) {
+		this.codigoFornecedor = codigoFornecedor;
+	}
+
+	public String getNomeFornecedor() {
+		return nomeFornecedor;
+	}
+
+	public void setNomeFornecedor(String nomeFornecedor) {
+		this.nomeFornecedor = nomeFornecedor;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() + " Codigo Fornecedor: " + codigoFornecedor + " Nome Fornecedor: " + nomeFornecedor;
+	}
 
 }
